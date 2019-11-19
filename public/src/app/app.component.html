@@ -1,0 +1,28 @@
+
+
+
+
+<span>{{ title }} app is running!</span>
+<table>
+    <tr>
+        <th>
+            Title:
+        </th>
+        <th>
+            Description:
+        </th>
+    </tr>
+    <tr *ngFor="let task of tasks">
+        <td>
+            {{task.title}}
+        </td>
+        <td>
+            {{task.description}}
+        </td>
+    </tr>
+</table>
+
+
+
+
+<router-outlet></router-outlet>
